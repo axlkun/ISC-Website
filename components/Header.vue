@@ -7,32 +7,25 @@
                     <div>
                         <img :src="logo" alt="Icono" />
                     </div>
-                    <!-- <div>
-                        <p><span>ISC</span> Ingeniería Servicios & Construcción</p>
-                    </div> -->
-
                 </a>
 
                 <button class="hide-icon" @click="toggleMenu" aria-label="Toggle Menu">
                     <v-icon :icon="menuOpen ? 'mdi mdi-close-box' : 'mdi mdi-menu'"></v-icon>
                 </button>
 
-                <!-- <div class="hide-icon">
-                    <v-icon :icon="menuOpen ? 'mdi mdi-close-box' : 'mdi mdi-menu'" @click="toggleMenu"></v-icon>
-                </div> -->
             </div>
 
             <div class="container-menu" :class="{ 'hide': !menuOpen }">
                 <ul class="menu desktop-menu">
                     <li><a href="/">Inicio</a></li>
-                    <li><a @click="redirectSection('aboutme')">Sobre nosotros</a></li>
-                    <li><a @click="redirectSection('services')">Servicios</a></li>
+                    <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="/sobre-nosotros">Servicios</a></li>
                     <li><a href="/proyectos">Proyectos</a></li>
-                    <li><a @click="redirectSection('contact')" class="button">Contacto</a></li>
+                    <li><a href="/sobre-nosotros" class="button">Contacto</a></li>
                 </ul>
 
                 <div class="hide-icon">
-                    <p>axelcruz.dev@gmail.com</p>
+                    <p>info@isc.com</p>
                 </div>
             </div>
 
@@ -42,7 +35,6 @@
   
 <script setup>
 import { ref } from 'vue';
-import { scrollToSection } from '../utils/utils';
 import logo from '../assets/logo.png';
 
 const menuOpen = ref(false);
@@ -55,22 +47,22 @@ const toggleMenu = () => {
   }
 };
 
-const redirectSection = (sectionName) => {
-  const windowWidth = window.innerWidth;
+// const redirectSection = (sectionName) => {
+//   const windowWidth = window.innerWidth;
 
-  if (windowWidth <= 1024) {
-    menuOpen.value = !menuOpen.value;
-  }
+//   if (windowWidth <= 1024) {
+//     menuOpen.value = !menuOpen.value;
+//   }
 
-  scrollToSection(sectionName);
-};
+//   scrollToSection(sectionName);
+// };
 </script>
   
 <style scoped>
 .header {
     width: 100%;
     max-height: 100vh;
-    background-color: gray;
+    background-color: var(--primary-background);
 }
 
 .stick {
