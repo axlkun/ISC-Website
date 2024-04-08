@@ -172,9 +172,8 @@ ul.menu li a.button {
 }
 
 ul.menu li a.button:hover {
-    opacity: 0.9;
-    text-decoration: none;
-    color: var(--primary-background);
+    color: white;
+    background-color: var(--primary-gold);
 }
 
 /* */
