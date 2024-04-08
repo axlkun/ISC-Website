@@ -106,6 +106,7 @@
     cursor: pointer;
     text-align: center;
     width: 85%;
+    font-size: 20px;
 
     @media only screen and (min-width: 1024px) {
         width: auto;
