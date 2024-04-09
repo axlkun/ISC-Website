@@ -101,7 +101,7 @@ export default {
     background: transparent;
     width: 90%;
     max-width: 120rem;
-    margin: 15px auto;
+    margin: 25px auto;
 }
 
 .title-container {
