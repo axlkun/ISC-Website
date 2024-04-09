@@ -144,55 +144,6 @@ export default {
     margin: 15px 0;
 }
 
-.service {
-    border-radius: 10px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    height: 250px;
-    width: 100%;
-    margin: 10px;
-}
-
-.service h3 {
-    font-size: 20px;
-    color: var(--primary-blue);
-    line-height: 1;
-    font-weight: bold;
-
-    @media only screen and (min-width: 1024px) {
-
-        font-size: 25px;
-
-    }
-}
-
-.service p,
-li {
-    font-size: 16px;
-    line-height: 1;
-    color: var(--primary-blue);
-
-    @media only screen and (min-width: 1024px) {
-
-        font-size: 20px;
-
-    }
-}
-
-li {
-    margin: 15px 0;
-    display: flex;
-    flex-direction: row;
-}
-
-span {
-    margin-right: 15px;
-
-}
-
 .button {
     background-color: var(--primary-gold);
     color: white;
