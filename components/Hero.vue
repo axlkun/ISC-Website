@@ -29,7 +29,7 @@
 <style scoped>
 .home {
     display: flex;
-    background-image: url('/assets/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/hero.jpg');
     background-position: center center;
     background-size: cover;
     min-height: 90vh;
