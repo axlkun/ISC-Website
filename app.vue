@@ -5,6 +5,7 @@
     <myHero/>
     <mySobreNosotros/>
     <myServicios/>
+    <myProyectos/>
     <!-- .... -->
   </v-app>
 </template>
@@ -14,6 +15,7 @@ import myHeader from './components/Header.vue';
 import myHero from './components/Hero.vue';
 import mySobreNosotros from './components/SobreNosotros.vue';
 import myServicios from './components/Servicios.vue';
+import myProyectos from './components/Proyectos.vue';
 
 
 
