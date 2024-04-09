@@ -6,6 +6,7 @@
     <mySobreNosotros/>
     <myServicios/>
     <myProyectos/>
+    <myParallax/>
     <!-- .... -->
   </v-app>
 </template>
@@ -16,6 +17,7 @@ import myHero from './components/Hero.vue';
 import mySobreNosotros from './components/SobreNosotros.vue';
 import myServicios from './components/Servicios.vue';
 import myProyectos from './components/Proyectos.vue';
+import myParallax from './components/Parallax.vue';
 
 
 
