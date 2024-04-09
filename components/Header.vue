@@ -165,7 +165,7 @@ a:visited {
   }
 
 ul.menu li a.button {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-gold);
     color: white;
     padding: 2px 8px;
     border-radius: 8px;
@@ -173,7 +173,7 @@ ul.menu li a.button {
 
 ul.menu li a.button:hover {
     color: white;
-    background-color: var(--primary-gold);
+    background-color: var(--secondary-gold);
 }
 
 /* */

@@ -99,7 +99,7 @@
 }
 
 .button {
-    background-color: var(--primary-blue);
+    background-color: var(--primary-gold);
     color: white;
     padding: 10px 35px;
     border-radius: 8px;
@@ -114,6 +114,6 @@
 }
 
 .button:hover {
-    background-color: var(--primary-gold);
+    background-color: var(--secondary-gold);
 }
 </style>

@@ -7,7 +7,9 @@ body {
     font-style: normal;
     font-display: swap;
     --primary-blue: #0c3474;
+    --secondary-blue: #0b1930;
     --primary-gold: #bc8c34;
+    --secondary-gold: #916411;
     --primary-background: #f5f1f1;
     --primary-grey: #dad9d6;
     --primary-black: #232325;

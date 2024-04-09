@@ -33,9 +33,6 @@
         </v-sheet>
         <v-sheet class="technologies">
 
-            <!-- <v-sheet class="container-tecnologies-title">
-                <h3>Innovación y Excelencia en Construcción</h3>
-            </v-sheet> -->
 
             <v-sheet class="img-container">
                 <img class="myImg" :src="img1" alt="Imagen Sobre Nosotros" />
@@ -69,7 +66,7 @@ import img1 from '../assets/edificio-8.jpg';
 }
 
 .description {
-    background-color: var(--primary-blue);
+    background-color: var(--secondary-blue);
     padding: 15px 0 30px 0;
     display: flex;
 
@@ -120,7 +117,7 @@ import img1 from '../assets/edificio-8.jpg';
 }
 
 .technologies {
-    background-color: var(--primary-background);
+    background-color: var(--primary-blue);
     padding: 15px 0;
     display: flex;
     justify-content: center;
@@ -128,38 +125,6 @@ import img1 from '../assets/edificio-8.jpg';
 
     @media only screen and (min-width: 768px) {
         padding: 0;
-    }
-}
-
-.container-tecnologies-title {
-    font-size: 25px;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    background: transparent;
-    color: var(--primary-blue);
-    text-align: center;
-    line-height: 1.1;
-
-    @media only screen and (min-width: 1024px) {
-        font-size: 35px;
-        text-align: start;
-        max-width: 80%;
-    }
-}
-
-.container-tecnologies {
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-    background: transparent;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    max-width: 90%;
-
-    @media only screen and (min-width: 768px) {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-row-gap: 2.5rem;
-        grid-column-gap: 1rem;
     }
 }
 
@@ -203,6 +168,10 @@ import img1 from '../assets/edificio-8.jpg';
 
     @media only screen and (min-width: 1024px) {
         width: auto;
+    }
+
+    &:hover{
+        background-color: var(--secondary-gold);
     }
 }
 </style>
