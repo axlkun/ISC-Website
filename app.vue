@@ -7,6 +7,7 @@
     <myServicios/>
     <myProyectos/>
     <myParallax/>
+    <myContact/>
     <!-- .... -->
   </v-app>
 </template>
@@ -18,6 +19,7 @@ import mySobreNosotros from './components/SobreNosotros.vue';
 import myServicios from './components/Servicios.vue';
 import myProyectos from './components/Proyectos.vue';
 import myParallax from './components/Parallax.vue';
+import myContact from './components/Contact.vue';
 
 
 
