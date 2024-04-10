@@ -149,7 +149,7 @@ a:visited {
 ul.menu li a.button {
     background-color: var(--primary-gold);
     color: white;
-    padding: 2px 8px;
+    padding: 8px 24px;
     border-radius: 8px;
 }
 
