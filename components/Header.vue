@@ -47,15 +47,6 @@ const toggleMenu = () => {
   }
 };
 
-// const redirectSection = (sectionName) => {
-//   const windowWidth = window.innerWidth;
-
-//   if (windowWidth <= 1024) {
-//     menuOpen.value = !menuOpen.value;
-//   }
-
-//   scrollToSection(sectionName);
-// };
 </script>
   
 <style scoped>
@@ -82,6 +73,7 @@ nav {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 8px 0;
     }
 }
 
@@ -94,16 +86,6 @@ nav {
 .logo img {
     width: 48px;
     height: 48px;
-}
-
-.logo p {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--primary-blue);
-}
-
-.logo p span {
-    color: var(--primary-black);
 }
 
 .hide-icon {
@@ -152,7 +134,7 @@ nav {
     cursor: pointer;
 
     @media only screen and (min-width: 1024px) {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     &:hover {
