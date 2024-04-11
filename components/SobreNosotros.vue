@@ -52,7 +52,7 @@ import img1 from '../assets/edificio-8.jpg';
 .aboutme {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 70vh;
 
     @media only screen and (min-width: 1024px) {
         flex-direction: row;
@@ -84,18 +84,19 @@ import img1 from '../assets/edificio-8.jpg';
 }
 
 .container-aboutme-title {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     min-width: 90%;
     margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
     background: transparent;
     color: var(--primary-background);
-    text-align: center;
 
     @media only screen and (min-width: 1024px) {
-        font-size: 55px;
-        text-align: start;
+        font-size: 30px;
         min-width: 80%;
+        text-align: start;
     }
 }
 
@@ -107,17 +108,19 @@ import img1 from '../assets/edificio-8.jpg';
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
+    text-align: center;
 
     @media only screen and (min-width: 1024px) {
         width: 80%;
-        font-size: 20px;
+        font-size: 16px;
+        text-align: start;
     }
 }
 
 .technologies {
-    background-color: var(--primary-blue);
+    background-color: var(--secondary-blue);
     padding: 15px 0;
     display: flex;
     justify-content: center;
@@ -132,7 +135,7 @@ import img1 from '../assets/edificio-8.jpg';
 
     background: transparent;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
     margin-top: 15px;
 }
 
@@ -142,7 +145,7 @@ import img1 from '../assets/edificio-8.jpg';
     height: 100%;
 
     @media only screen and (min-width: 1024px) {
-        min-width: 400px;
+        max-width: 400px;
     }
 }
 
@@ -164,7 +167,7 @@ import img1 from '../assets/edificio-8.jpg';
     border-radius: 8px;
     cursor: pointer;
     width: 85%;
-    font-size: 20px;
+    font-size: 16px;
 
     @media only screen and (min-width: 1024px) {
         width: auto;
@@ -174,4 +177,34 @@ import img1 from '../assets/edificio-8.jpg';
         background-color: var(--secondary-gold);
     }
 }
+
+.container-description-title,
+    .container-description-description {
+        background: transparent;
+        color: var(--primary-background);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+        line-height: 1.2;
+        margin-top: 30px;
+    
+        @media only screen and (min-width: 1024px) {
+    
+            font-size: 20px;
+        }
+    }
+    
+    .container-description-title p{
+    
+        font-size: 35px;
+        line-height: 1;
+        font-weight: bold;
+    
+        @media only screen and (min-width: 1024px) {
+    
+            font-size: 55px;
+        }
+    
+    }
 </style>
