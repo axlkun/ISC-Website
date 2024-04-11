@@ -2,11 +2,14 @@
     <v-sheet class="services" id="services">
         <v-sheet class="container-service">
             <v-sheet class="title-container">
+                
                 <h2>Servicios</h2>
-                <p>Ofrecemos servicios profesionales de Ingeniería, Construcción y Diseño.</p>
+                <p>Ingeniería, Construcción y Diseño.</p>
+                <!-- <h2>Servicios</h2>
+                <p>Ofrecemos servicios profesionales de Ingeniería, Construcción y Diseño.</p> -->
             </v-sheet>
 
-            <v-sheet class="d-flex justify-center flex-wrap" color="transparent">
+            <v-sheet class="d-flex justify-center flex-wrap pb-3" color="transparent">
                 <v-card color="#dad9d6" class="service" v-for="service in services" :key="service.title" max-width="300" variant="elevated" elevation="1">
 
                     <v-icon color="#bc8c34" :icon="service.icon" size="large"></v-icon>
@@ -90,30 +93,35 @@ export default {
 
 .title-container {
 
+    max-width: 80%;
     margin: 0 auto;
     color: var(--primary-blue);
     background: transparent;
-    text-align: center;
+    text-align: start;
     font-weight: bold;
+    padding: 15px 0;
 
     @media only screen and (min-width: 1024px) {
         max-width: 50%;
-    }
-}
+        text-align: center;
 
-.title-container h2 {
-    font-size: 35px;
-
-    @media only screen and (min-width: 1024px) {
-        font-size: 55px;
     }
 }
 
 .title-container p {
-    font-size: 16px;
+    font-size: 25px;
 
     @media only screen and (min-width: 1024px) {
-        font-size: 20px;
+        font-size: 30px;
+    }
+}
+
+.title-container h2 {
+    font-size: 14px;
+    color: var(--primary-gold);
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 16px;
     }
 }
 
@@ -130,27 +138,27 @@ export default {
 }
 
 .service h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--primary-blue);
     line-height: 1;
     font-weight: bold;
 
     @media only screen and (min-width: 1024px) {
 
-        font-size: 25px;
+        font-size: 22px;
 
     }
 }
 
 .service p,
 li {
-    font-size: 16px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 1.2;
     color: var(--primary-blue);
 
     @media only screen and (min-width: 1024px) {
 
-        font-size: 20px;
+        font-size: 16px;
 
     }
 }
