@@ -31,7 +31,7 @@
             </v-sheet>
 
         </v-sheet>
-        <v-sheet class="technologies">
+        <v-sheet class="image">
 
 
             <v-sheet class="img-container">
@@ -60,7 +60,7 @@ import img1 from '../assets/edificio-8.webp';
 }
 
 .description,
-.technologies {
+.image {
     flex-grow: 1;
     flex-basis: 50%;
 }
@@ -119,7 +119,7 @@ import img1 from '../assets/edificio-8.webp';
     }
 }
 
-.technologies {
+.image {
     background-color: var(--secondary-blue);
     padding: 15px 0;
     display: flex;

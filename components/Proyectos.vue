@@ -1,16 +1,16 @@
 <template>
-    <v-sheet class="services" id="services">
-        <v-sheet class="container-service">
+    <v-sheet class="projects" id="projects">
+        <v-sheet class="container-projects">
             <v-sheet class="title-container">
 
-                <v-sheet class="litle-container">
+                <v-sheet class="title-subcontainer">
 
                     <h2>Proyectos</h2>
                     <p>Conoce algunos de nuestros proyectos más recientes. Desde residencias modernas hasta complejos
                         comerciales de vanguardia,</p>
                 </v-sheet>
 
-                <v-sheet class="litle-container">
+                <v-sheet class="title-subcontainer">
                     <a class="button" href="#">Todos los proyectos</a>
                 </v-sheet>
 
@@ -84,7 +84,7 @@ const projects = [
 </script>
 
 <style scoped>
-.services {
+.projects {
     background-color: var(--secondary-blue);
     display: flex;
     flex-direction: column;
@@ -92,7 +92,7 @@ const projects = [
     align-items: center;
 }
 
-.container-service {
+.container-projects {
     background: transparent;
     width: 90%;
     max-width: 120rem;
@@ -136,7 +136,7 @@ const projects = [
     }
 }
 
-.litle-container {
+.title-subcontainer {
     background: transparent;
     color: white;
     max-width: 600px;
