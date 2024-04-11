@@ -4,8 +4,9 @@
             <v-sheet class="title-container">
 
                 <v-sheet class="litle-container">
+                
                     <h2>Proyectos</h2>
-                    <p>Conoce algunos de nuestros proyectos más recientes</p>
+                    <p>Conoce algunos de nuestros proyectos más recientes. Desde residencias modernas hasta complejos comerciales de vanguardia,</p>
                 </v-sheet>
 
                 <v-sheet class="litle-container">
@@ -14,8 +15,8 @@
                 
             </v-sheet>
 
-            <v-sheet class="d-flex flex-wrap justify-space-between" color="transparent">
-                <v-card class="mt-4 mb-4" v-for="project in projects" link>
+            <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8" color="transparent">
+                <v-card v-for="project in projects" link>
                     <v-img
                       :src="project.image"
                       class="align-end"
@@ -45,13 +46,13 @@ export default {
     data: () => ({
         projects: [
             {
-                title: 'Obra residencial',
+                title: 'Edificio Corporativo',
                 image: '/_nuxt/assets/edificio-3.webp',
                 location: 'Monterrey, Nuevo León.',
 
             },
             {
-                title: 'Obra residencial',
+                title: 'Complejo Habitacional',
                 image: '/_nuxt/assets/edificio-7.webp',
                 location: 'Monterrey, Nuevo León.',
 
@@ -89,7 +90,6 @@ export default {
 
 <style scoped>
 .services {
-    min-height: 100vh;
     background-color: var(--secondary-blue);
     display: flex;
     flex-direction: column;
@@ -123,24 +123,28 @@ export default {
 }
 
 .title-container h2 {
-    font-size: 35px;
+    color: var(--primary-gold);
+    font-size: 25px;
+    font-weight: bold;
 
     @media only screen and (min-width: 1024px) {
-        font-size: 55px;
+        font-size: 30px;
     }
 }
 
 .title-container p {
-    font-size: 16px;
+    font-size: 14px;
+    color: white;
 
     @media only screen and (min-width: 1024px) {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
 .litle-container{
     background: transparent;
     color: white;
+    max-width: 600px;
     margin: 15px 0;
 }
 
@@ -150,7 +154,7 @@ export default {
     padding: 10px 35px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     min-width: 100px;
 
     &:hover{
