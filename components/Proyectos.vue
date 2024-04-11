@@ -4,88 +4,83 @@
             <v-sheet class="title-container">
 
                 <v-sheet class="litle-container">
-                
+
                     <h2>Proyectos</h2>
-                    <p>Conoce algunos de nuestros proyectos más recientes. Desde residencias modernas hasta complejos comerciales de vanguardia,</p>
+                    <p>Conoce algunos de nuestros proyectos más recientes. Desde residencias modernas hasta complejos
+                        comerciales de vanguardia,</p>
                 </v-sheet>
 
                 <v-sheet class="litle-container">
                     <a class="button" href="#">Todos los proyectos</a>
                 </v-sheet>
-                
+
             </v-sheet>
 
             <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5" color="transparent">
                 <v-card v-for="project in projects" link>
-                    <v-img
-                      :src="project.image"
-                      class="align-end"
-                      gradient="to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)"
-                      width="400px"
-                      height="400px"
-                      cover
-                    >
-                      <v-card-title class="text-white">{{ project.title }}</v-card-title>
-                      <v-card-subtitle class="text-white mb-4">{{ project.location }}</v-card-subtitle>
+                    <v-img :src="project.image" class="align-end"
+                        gradient="to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)" width="400px" height="400px" cover>
+                        <v-card-title class="text-white">{{ project.title }}</v-card-title>
+                        <v-card-subtitle class="text-white mb-4">{{ project.location }}</v-card-subtitle>
                     </v-img>
-        
-                  </v-card>
+
+                </v-card>
             </v-sheet>
 
-            
+
         </v-sheet>
     </v-sheet>
 </template>
 
-<script>
+<script setup>
 
-export default {
+import edificio1 from 'assets/edificio-3.webp'
+import edificio2 from 'assets/edificio-7.webp'
+import edificio3 from 'assets/edificio-1.webp'
+import edificio4 from 'assets/edificio-2.webp'
+import edificio5 from 'assets/edificio-5.webp'
+import edificio6 from 'assets/edificio-9.webp'
 
-    name: 'servicesSection',
+const projects = [
+    {
+        title: 'Edificio Corporativo',
+        image: edificio1,
+        location: 'Monterrey, Nuevo León.',
 
-    data: () => ({
-        projects: [
-            {
-                title: 'Edificio Corporativo',
-                image: '/_nuxt/assets/edificio-3.webp',
-                location: 'Monterrey, Nuevo León.',
+    },
+    {
+        title: 'Complejo Habitacional',
+        image: edificio2,
+        location: 'Monterrey, Nuevo León.',
 
-            },
-            {
-                title: 'Complejo Habitacional',
-                image: '/_nuxt/assets/edificio-7.webp',
-                location: 'Monterrey, Nuevo León.',
+    },
+    {
+        title: 'Obra residencial',
+        image: edificio3,
+        location: 'Monterrey, Nuevo León.',
 
-            },
-            {
-                title: 'Obra residencial',
-                image: '/_nuxt/assets/edificio-1.webp',
-                location: 'Monterrey, Nuevo León.',
+    },
+    {
+        title: 'Obra civil',
+        image: edificio4,
+        location: 'Monterrey, Nuevo León.',
 
-            },
-            {
-                title: 'Obra civil',
-                image: '/_nuxt/assets/edificio-2.webp',
-                location: 'Monterrey, Nuevo León.',
+    },
+    {
+        title: 'Desarrollo urbano',
+        image: edificio5,
+        location: 'Monterrey, Nuevo León.',
 
-            },
-            {
-                title: 'Desarrollo urbano',
-                image: '/_nuxt/assets/edificio-5.webp',
-                location: 'Monterrey, Nuevo León.',
+    },
+    {
+        title: 'Torre de departamentos',
+        image: edificio6,
+        location: 'Monterrey, Nuevo León.',
 
-            },
-            {
-                title: 'Torre de departamentos',
-                image: '/_nuxt/assets/edificio-9.webp',
-                location: 'Monterrey, Nuevo León.',
+    },
 
-            },
-           
-        ]
-    })
+]
 
-}
 </script>
 
 <style scoped>
@@ -141,7 +136,7 @@ export default {
     }
 }
 
-.litle-container{
+.litle-container {
     background: transparent;
     color: white;
     max-width: 600px;
@@ -157,7 +152,7 @@ export default {
     font-size: 16px;
     min-width: 100px;
 
-    &:hover{
+    &:hover {
         background-color: var(--secondary-gold);
     }
 }
