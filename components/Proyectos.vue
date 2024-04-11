@@ -15,7 +15,7 @@
                 
             </v-sheet>
 
-            <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8" color="transparent">
+            <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5" color="transparent">
                 <v-card v-for="project in projects" link>
                     <v-img
                       :src="project.image"
