@@ -69,14 +69,15 @@
     }
     
     .contact-container {
-        width: 100%;
+        width: 90%;
         
         display: flex;
         flex-direction: column;
+        margin: 20px 0;
     
         @media only screen and (min-width: 1024px) {
             flex-direction: row;
-            width: 90%;
+            
         }
     }
     
@@ -87,7 +88,7 @@
     }
     
     .contact-description{
-        background-color: var(--primary-blue);
+        background-color: var(--secondary-blue);
     }
     
     .contact-description-container{
@@ -108,13 +109,13 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.2;
         margin-top: 30px;
     
         @media only screen and (min-width: 1024px) {
     
-            font-size: 20px;
+            font-size: 16px;
         }
     }
     
@@ -148,7 +149,7 @@
     }
     
     .contact-links{
-        background-color: var(--primary-blue);
+        background-color: var(--secondary-grey);
         
     }
     
