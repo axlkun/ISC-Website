@@ -3,10 +3,14 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
 
   app: {
+    
     head: {
       htmlAttrs: {
         lang: 'es',
       },
+
+      title: 'ISC Ingeniería Servicios & Construcción',
+
       meta: [
         { 'http-equiv': 'content-language', content: 'es' },
         // ...otras etiquetas meta
