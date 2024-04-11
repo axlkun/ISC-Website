@@ -71,13 +71,13 @@ export default {
             },
             {
                 title: 'Desarrollo urbano',
-                image: '/_nuxt/assets/edificio-5.jpg',
+                image: '/_nuxt/assets/edificio-5.webp',
                 location: 'Monterrey, Nuevo León.',
 
             },
             {
                 title: 'Torre de departamentos',
-                image: '/_nuxt/assets/edificio-9.jpg',
+                image: '/_nuxt/assets/edificio-9.webp',
                 location: 'Monterrey, Nuevo León.',
 
             },

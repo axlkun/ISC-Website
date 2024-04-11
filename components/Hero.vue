@@ -1,5 +1,5 @@
 <template>
-    <v-parallax src="/assets/hero.jpg" class="h-screen" color="grey">
+    <v-parallax src="/assets/hero.webp" class="h-screen" color="grey">
         <div class="d-flex flex-column fill-height justify-center align-center text-white ma-3 text-center">
 
             <div class="home-encabezado">

@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import img1 from '../assets/edificio-8.jpg';
+import img1 from '../assets/edificio-8.webp';
 
 </script>
 
