@@ -10,7 +10,7 @@
                 </v-sheet>
 
                 <v-sheet class="litle-container">
-                    <a class="button" href="/sobre-nosotros">Todos los proyectos</a>
+                    <a class="button" href="#">Todos los proyectos</a>
                 </v-sheet>
                 
             </v-sheet>

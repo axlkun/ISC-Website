@@ -34,11 +34,11 @@
                 <h3>Redes sociales</h3>
 
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/axel-andres-cruz-cordova/" target="_blank">Linkdln</a></li>
-                    <li><a href="https://github.com/axlkun" target="_blank">GitHub</a></li>
-                    <li><a href="https://twitter.com/Axlkun" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/axlkun" target="_blank">Instagram</a></li>
-                    <li><a href="mailto:axelcruz.dev@gmail.com">Email</a></li>
+                    <li><a href="#" target="_blank">Linkdln</a></li>
+                    <li><a href="#" target="_blank">GitHub</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="mailto:#">Email</a></li>
                 </ul>
             </div>
 
