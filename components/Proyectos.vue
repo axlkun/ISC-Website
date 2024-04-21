@@ -7,7 +7,7 @@
 
                     <h2>Proyectos</h2>
                     <p>Conoce algunos de nuestros proyectos más recientes. Desde residencias modernas hasta complejos
-                        comerciales de vanguardia,</p>
+                        comerciales de vanguardia</p>
                 </v-sheet>
 
                 <v-sheet class="title-subcontainer">

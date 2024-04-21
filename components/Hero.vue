@@ -7,7 +7,7 @@
                     ISC: Ingeniería Servicios & Construcción
                 </h1>
                 <h2 class="subheading ">
-                    Somos una empresa de construcción ubicada en <strong>Monterrey</strong> especializada en servicios de Gerencia y administración de proyectos, Ejecución y supervisión de obra, Diseño, Desarrollo de ingenierías, Cálculos estructurales y Gestión con metodología PMI.
+                    Desarrollamos los proyectos de mayor complejidad técnica, mejorando la calidad de vida de las personas y potenciando el desarrollo económico.
                 </h2>
     
                 <div class="button-container">
