@@ -25,7 +25,7 @@
                 </v-sheet>
 
                 <v-sheet class="button-container">
-                    <a class="button" href="#">Leer más...</a>
+                    <a class="button" href="/sobre-nosotros">Leer más...</a>
                 </v-sheet>
 
             </v-sheet>

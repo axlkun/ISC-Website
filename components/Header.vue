@@ -18,7 +18,7 @@
             <div class="container-menu" :class="{ 'hide': !menuOpen }">
                 <ul class="menu desktop-menu">
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Proyectos</a></li>
                     <li><a href="#" class="button">Contacto</a></li>
@@ -138,7 +138,7 @@ nav {
     }
 
     &:hover {
-        color: var(--primary-blue);
+        color: var(--secondary-gold);
     }
 }
 

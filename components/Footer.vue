@@ -23,7 +23,7 @@
 
                 <ul>
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Proyectos</a></li>
                     <li><a href="#">Contacto</a></li>
