@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import img1 from '../assets/edificio-8.webp';
+import img1 from '../assets/sobre-nosotros1.webp';
 
 </script>
 
@@ -134,7 +134,7 @@ import img1 from '../assets/edificio-8.webp';
 .img-container {
 
     background: transparent;
-    max-width: 80%;
+    max-width: 90%;
     margin: 30px auto;
     margin-top: 15px;
 }
@@ -145,7 +145,7 @@ import img1 from '../assets/edificio-8.webp';
     height: 100%;
 
     @media only screen and (min-width: 1024px) {
-        max-width: 400px;
+        max-width: 500px;
     }
 }
 
