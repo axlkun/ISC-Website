@@ -6,8 +6,7 @@
                 <v-sheet class="title-subcontainer">
 
                     <h2>Proyectos</h2>
-                    <p>Conoce algunos de nuestros proyectos más recientes. Desde residencias modernas hasta complejos
-                        comerciales de vanguardia</p>
+                    <p>Nuestros proyectos más recientes</p>
                 </v-sheet>
 
                 <v-sheet class="title-subcontainer">
@@ -85,7 +84,7 @@ const projects = [
 
 <style scoped>
 .projects {
-    background-color: var(--secondary-blue);
+    background-color: var(--primary-background);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,6 +107,7 @@ const projects = [
     justify-content: center;
     align-items: center;
     margin: 15px 0;
+    font-weight: bold;
 
     @media only screen and (min-width: 1024px) {
         flex-direction: row;
@@ -117,7 +117,7 @@ const projects = [
     }
 }
 
-.title-container h2 {
+/*.title-container h2 {
     color: var(--primary-gold);
     font-size: 25px;
     font-weight: bold;
@@ -129,7 +129,25 @@ const projects = [
 
 .title-container p {
     font-size: 14px;
-    color: white;
+    color: var(--secondary-blue);
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 16px;
+    }
+}*/
+
+.title-container p {
+    font-size: 25px;
+    color: var(--secondary-blue);
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 30px;
+    }
+}
+
+.title-container h2 {
+    font-size: 14px;
+    color: var(--primary-gold);
 
     @media only screen and (min-width: 1024px) {
         font-size: 16px;
