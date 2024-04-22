@@ -36,7 +36,7 @@ export default {
 
             },
             {
-                title: 'Ejecución y Supervición de obra',
+                title: 'Ejecución y Supervisión de obra',
                 icon: 'mdi-office-building-cog',
                 description: 'Coordinamos los equipos y supervisamos cada etapa para garantizar la calidad y el cumplimiento de los plazos establecidos.',
 
