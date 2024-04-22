@@ -1,6 +1,6 @@
 <template>
     <v-sheet class="projects" id="projects">
-        <v-sheet class="container-projects">
+        <v-sheet class="container-projects pb-lg-16">
             <v-sheet class="title-container">
 
                 <v-sheet class="title-subcontainer">
