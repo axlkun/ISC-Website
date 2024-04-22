@@ -3,7 +3,7 @@
         <div class="d-flex flex-column fill-height justify-center align-center text-white ma-3 text-center">
 
             <div class="home-encabezado">
-                <h1 class="text-h4 font-weight-thin mb-4">
+                <h1 class="text-h4 font-weight-bold mb-4">
                     ISC: Ingeniería Servicios & Construcción
                 </h1>
                 <h2 class="subheading ">
