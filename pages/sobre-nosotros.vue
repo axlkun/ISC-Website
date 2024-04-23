@@ -43,7 +43,7 @@
     
     
                 <v-sheet class="img-container">
-                    <img class="myImg" :src="img1" alt="Imagen Sobre Nosotros" />
+                    <img class="myImg" :src="img1" alt="Imagen Sobre Nosotros" loading="lazy" />
                 </v-sheet>
     
     

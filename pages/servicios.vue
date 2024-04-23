@@ -12,7 +12,7 @@
 
             <v-sheet class="service mb-16" v-for="service in services">
                 <v-sheet class="service-image">
-                    <img :src="service.image" alt="Imagen Sobre Nosotros" />
+                    <img :src="service.image" alt="Imagen Sobre Nosotros" loading="lazy" />
                 </v-sheet>
 
                 <v-sheet class="service-text">

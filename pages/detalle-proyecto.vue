@@ -16,7 +16,7 @@
         </div>
 
         <div class="proyecto-image">
-            <img :src="edificio3" alt="Imagen Sobre Nosotros" />
+            <img :src="edificio3" alt="Imagen Sobre Nosotros" loading="lazy"/>
         </div>
 
         <div class="proyecto-data">
@@ -57,7 +57,7 @@
     
                 <p>Recreational Delights: The park is not just a place for relaxation but also a hub for recreational activities. Engage in friendly games of frisbee, practice yoga on the open grassy areas, or challenge friends to a game of badminton. Park On the Roof provides ample space for outdoor activities, ensuring that there is something for everyone to enjoy.</p>
 
-                <img :src="edificio6" alt="Imagen Sobre Nosotros" />
+                <img :src="edificio6" alt="Imagen Sobre Nosotros" loading="lazy"/>
     
                 <p>Botanical Wonders: Delve into a world of botanical wonders as you explore the park's dedicated gardens and themed areas. From vibrant flower beds to aromatic herb gardens, each section showcases the beauty and diversity of plant life. Learn about different species, admire the colorful blooms, and discover the tranquility that comes from being in the presence of nature's bounty.</p>
             </div>
