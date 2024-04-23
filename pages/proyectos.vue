@@ -11,7 +11,7 @@
                 <v-img :src="project.image" class="align-end"
                     gradient="to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)" width="400px" height="400px" cover>
                     <v-card-title class="text-white">{{ project.title }}</v-card-title>
-                    <v-card-subtitle class="text-white mb-4">{{ project.location }}</v-card-subtitle>
+                    <v-card-subtitle class="text-white mb-4">{{ project.services }}</v-card-subtitle>
                 </v-img>
 
             </v-card>
@@ -33,41 +33,41 @@ import edificio6 from 'assets/edificio-9.webp';
 import myParallax from '../components/Parallax.vue';
   import myContact from '../components/Contact.vue';
 
-const projects = [
+  const projects = [
     {
         title: 'Edificio Corporativo',
         image: edificio1,
-        location: 'Monterrey, Nuevo León.',
+        service: 'Obra Civil.',
 
     },
     {
         title: 'Complejo Habitacional',
         image: edificio2,
-        location: 'Monterrey, Nuevo León.',
+        service: 'Ejecución y Supervisión de obra',
 
     },
     {
         title: 'Obra residencial',
         image: edificio3,
-        location: 'Monterrey, Nuevo León.',
+        service: 'Gerencia y Administración de proyectos',
 
     },
     {
         title: 'Obra civil',
         image: edificio4,
-        location: 'Monterrey, Nuevo León.',
+        service: 'Desarrollo de Ingenierías',
 
     },
     {
         title: 'Desarrollo urbano',
         image: edificio5,
-        location: 'Monterrey, Nuevo León.',
+        service: 'Diseño arquitectónico',
 
     },
     {
         title: 'Torre de departamentos',
         image: edificio6,
-        location: 'Monterrey, Nuevo León.',
+        service: 'Gestion de proyectos con metodologia PMI',
 
     },
 
