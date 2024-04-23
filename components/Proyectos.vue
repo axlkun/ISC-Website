@@ -10,7 +10,7 @@
                 </v-sheet>
 
                 <v-sheet class="title-subcontainer">
-                    <a class="button" href="#">Todos los proyectos</a>
+                    <a class="button" href="/proyectos">Todos los proyectos</a>
                 </v-sheet>
 
             </v-sheet>

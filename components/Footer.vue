@@ -25,7 +25,7 @@
                     <li><a href="/">Inicio</a></li>
                     <li><a href="/sobre-nosotros">Sobre nosotros</a></li>
                     <li><a href="/servicios">Servicios</a></li>
-                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="/proyectos">Proyectos</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
