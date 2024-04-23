@@ -16,7 +16,7 @@
             </v-sheet>
 
             <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5" color="transparent">
-                <v-card v-for="project in projects" link>
+                <v-card v-for="project in projects" href="/detalle-proyecto">
                     <v-img :src="project.image" class="align-end"
                         gradient="to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)" width="400px" height="400px" cover>
                         <v-card-title class="text-white">{{ project.title }}</v-card-title>
