@@ -101,7 +101,7 @@ const elements = [
 .text-container {
     background: transparent;
     max-width: 90%;
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
