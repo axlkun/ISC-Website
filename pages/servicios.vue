@@ -35,12 +35,12 @@
 
 <script setup>
 import imgGerencia from '../assets/sobre-nosotros1.webp';
-import imgSupervision from '../assets/supervision-obra.jpg';
-import imgObraCivil from '../assets/obra-civil.jpg';
-import imgDiseñoArquitectonico from '../assets/diseño-arquitectonico.jpg';
-import imgIngenierias from '../assets/ingenierias.jpg';
-import imgCalculoEstructural from '../assets/calculos-estructurales.jpg';
-import imgMetodologiaPMI from '../assets/metodologia-pmi.jpg';
+import imgSupervision from '../assets/supervision-obra.webp';
+import imgObraCivil from '../assets/obra-civil.webp';
+import imgDiseñoArquitectonico from '../assets/diseño-arquitectonico.webp';
+import imgIngenierias from '../assets/ingenierias.webp';
+import imgCalculoEstructural from '../assets/calculos-estructurales.webp';
+import imgMetodologiaPMI from '../assets/metodologia-pmi.webp';
 
 import myParallax from '../components/Parallax.vue';
   import myContact from '../components/Contact.vue';
