@@ -14,7 +14,9 @@ body {
     --secondary-grey: #7b7976;
     --primary-black: #232325;
     scroll-behavior: smooth;
+}
 
+main{
     background-color: var(--primary-background);
 }
 
