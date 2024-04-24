@@ -4,7 +4,7 @@
 
         <v-sheet class="background-container">
 
-            <v-sheet class="text-container pt-6">
+            <div class="text-container pt-6">
 
                 <p>Nuestra fórmula</p>
 
@@ -20,18 +20,19 @@
                     nos convierten en socios estratégicos de nuestros clientes.
                 </p>
 
-            </v-sheet>
+            </div>
 
-            <v-sheet class="d-flex justify-center flex-wrap mt-16 ga-6 pb-16" color="transparent">
-                <v-card class="card mb-6" color="transparent" v-for="element in elements" max-width="400">
-
-                    <div class="d-flex mb-3">
-                        <v-icon color="#bc8c34" :icon="element.icon" size="large"></v-icon>
-                        <h3 class="ml-2">{{ element.title }}</h3>
-                    </div>
-                    <p class="text-white">{{ element.description }}</p>
-                </v-card>
-            </v-sheet>
+                <v-expansion-panels class="expansion-container">
+                    <v-expansion-panel v-for="item in elements" class="ma-5" bg-color="#0b1930">
+                        <v-expansion-panel-title expand-icon="mdi-plus" collapse-icon="mdi-minus" class="text-h7 text-md-h6" >
+                            <span class="mdi ma-2" :class="item.icon"></span> {{ item.title }}
+                        </v-expansion-panel-title>
+                        <v-expansion-panel-text>
+                            {{ item.description }}
+                        </v-expansion-panel-text>
+                    </v-expansion-panel>
+                </v-expansion-panels>
+            
 
         </v-sheet>
 
@@ -88,19 +89,28 @@ const elements = [
 }
 
 .background-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 85%;
     margin: 0 auto;
     background-color: var(--secondary-blue);
-    background-image: linear-gradient(to bottom, #0b1935, #0b1930);
+    gap: 25px;
 
     @media only screen and (min-width: 1024px) {
         max-width: 90%;
+        flex-direction: row;
     }
 }
 
+.text-container,
+.expansion-container {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
 .text-container {
-    background: transparent;
-    max-width: 90%;
+    
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -108,7 +118,7 @@ const elements = [
     gap: 15px;
 
     @media only screen and (min-width: 1024px) {
-        max-width: 60%;
+        text-align: start;
     }
 }
 
