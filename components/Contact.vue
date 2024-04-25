@@ -28,17 +28,7 @@
                 <v-sheet class="contact-link-container">
                     <v-sheet class="follow">
 
-                        <a class="button" href="#" target="_blank">
-                            <div class="social-name">
-                                <span class="mdi mdi-linkedin"></span>
-                                <span>Linkdln</span>
-                            </div>
-                            <div>
-                                <span class="mdi mdi-arrow-right-thin"></span>
-                            </div>
-                        </a>
-
-                        <a class="button" href="#" target="_blank">
+                        <a class="button" href="https://www.facebook.com/share/mVrZuFkdR591uQzo/?mibextid=YMEMSu" target="_blank">
                             <div class="social-name">
                                 <span class="mdi mdi-facebook"></span>
                                 <span>Facebook</span>
@@ -48,10 +38,20 @@
                             </div>
                         </a>
 
-                        <a class="button" href="#" target="_blank">
+                        <a class="button" href="https://www.instagram.com/isc.mexico" target="_blank">
                             <div class="social-name">
                                 <span class="mdi mdi-instagram"></span>
                                 <span>Instagram</span>
+                            </div>
+                            <div>
+                                <span class="mdi mdi-arrow-right-thin"></span>
+                            </div>
+                        </a>
+
+                        <a class="button" href="#" target="_blank">
+                            <div class="social-name">
+                                <span class="mdi mdi-linkedin"></span>
+                                <span>Linkdln</span>
                             </div>
                             <div>
                                 <span class="mdi mdi-arrow-right-thin"></span>
