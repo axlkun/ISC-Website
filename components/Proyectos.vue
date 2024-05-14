@@ -16,8 +16,8 @@
             </v-sheet>
 
             <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5" color="transparent">
-                <v-card v-for="project in projects" href="/detalle-proyecto">
-                    <v-img :src="project.image" class="align-end"
+                <v-card v-for="project in projects" :href="'/proyectos/' + project.slug">
+                    <v-img :src="`${dominio}${project.imageUrl}`" class="align-end"
                         gradient="to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)" width="400px" height="400px" cover>
                         <v-card-title class="text-white">{{ project.title }}</v-card-title>
                         <v-card-subtitle class="text-white mb-4">{{ project.service }}</v-card-subtitle>
@@ -32,53 +32,78 @@
 </template>
 
 <script setup>
+import api from '../api';
 
-import edificio1 from 'assets/edificio-3.webp'
-import edificio2 from 'assets/edificio-7.webp'
-import edificio3 from 'assets/edificio-1.webp'
-import edificio4 from 'assets/edificio-2.webp'
-import edificio5 from 'assets/edificio-5.webp'
-import edificio6 from 'assets/edificio-9.webp'
+const dominio = api.defaults.baseURL;
+const projects = ref([]);
 
-const projects = [
-    {
-        title: 'Edificio Corporativo',
-        image: edificio1,
-        service: 'Obra Civil.',
+const getProjects = async () => {
+    try {
+        const response = await api.get('/api/projects');
 
-    },
-    {
-        title: 'Complejo Habitacional',
-        image: edificio2,
-        service: 'Ejecución y Supervisión de obra',
+        if (response.status === 200) {
+            projects.value = response.data.data;
+        } else {
+            console.error('Respuesta no exitosa:', response);
+            $router.push('/');
+        }
+    } catch (error) {
+        console.error('Error al hacer la solicitud GET:', error);
+        $router.push('/');
+    } finally {
+        //loading.value = false;
+    }
+}
 
-    },
-    {
-        title: 'Obra residencial',
-        image: edificio3,
-        service: 'Gerencia y Administración de proyectos',
+onMounted(() => {
+    getProjects();
+})
+// import edificio1 from 'assets/edificio-3.webp'
+// import edificio2 from 'assets/edificio-7.webp'
+// import edificio3 from 'assets/edificio-1.webp'
+// import edificio4 from 'assets/edificio-2.webp'
+// import edificio5 from 'assets/edificio-5.webp'
+// import edificio6 from 'assets/edificio-9.webp'
 
-    },
-    {
-        title: 'Obra civil',
-        image: edificio4,
-        service: 'Desarrollo de Ingenierías',
+// const projects = [
+//     {
+//         title: 'Edificio Corporativo',
+//         image: edificio1,
+//         service: 'Obra Civil.',
 
-    },
-    {
-        title: 'Desarrollo urbano',
-        image: edificio5,
-        service: 'Diseño arquitectónico',
+//     },
+//     {
+//         title: 'Complejo Habitacional',
+//         image: edificio2,
+//         service: 'Ejecución y Supervisión de obra',
 
-    },
-    {
-        title: 'Torre de departamentos',
-        image: edificio6,
-        service: 'Gestion de proyectos con metodologia PMI',
+//     },
+//     {
+//         title: 'Obra residencial',
+//         image: edificio3,
+//         service: 'Gerencia y Administración de proyectos',
 
-    },
+//     },
+//     {
+//         title: 'Obra civil',
+//         image: edificio4,
+//         service: 'Desarrollo de Ingenierías',
 
-]
+//     },
+//     {
+//         title: 'Desarrollo urbano',
+//         image: edificio5,
+//         service: 'Diseño arquitectónico',
+
+//     },
+//     {
+//         title: 'Torre de departamentos',
+//         image: edificio6,
+//         service: 'Gestion de proyectos con metodologia PMI',
+
+//     },
+
+// ]
 
 </script>
 
