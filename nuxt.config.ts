@@ -32,12 +32,7 @@ export default defineNuxtConfig({
   //     // add a route
   //     pages.push(
   //       {
-  //         name: 'article',
-  //         path: '/blog/:slug',
-  //         file: '~/pages/blog/[...slug].vue',
-  //       },
-  //       {
-  //         name: 'project',
+  //         name: 'proyecto',
   //         path: '/proyectos/:slug',
   //         file: '~/pages/proyectos/[...slug].vue',
   //       }

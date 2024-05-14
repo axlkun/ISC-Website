@@ -3,7 +3,7 @@
 
     <myHeader></myHeader>
     <main>
-      <router-view></router-view>
+      <NuxtPage />
     </main>
     <myFooter></myFooter>
   </v-app>
@@ -12,7 +12,5 @@
 <script setup>
 import myHeader from './components/Header.vue';
 import myFooter from './components/Footer.vue';
-
-
 
 </script>
