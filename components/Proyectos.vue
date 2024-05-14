@@ -58,52 +58,6 @@ const getProjects = async () => {
 onMounted(() => {
     getProjects();
 })
-// import edificio1 from 'assets/edificio-3.webp'
-// import edificio2 from 'assets/edificio-7.webp'
-// import edificio3 from 'assets/edificio-1.webp'
-// import edificio4 from 'assets/edificio-2.webp'
-// import edificio5 from 'assets/edificio-5.webp'
-// import edificio6 from 'assets/edificio-9.webp'
-
-// const projects = [
-//     {
-//         title: 'Edificio Corporativo',
-//         image: edificio1,
-//         service: 'Obra Civil.',
-
-//     },
-//     {
-//         title: 'Complejo Habitacional',
-//         image: edificio2,
-//         service: 'Ejecución y Supervisión de obra',
-
-//     },
-//     {
-//         title: 'Obra residencial',
-//         image: edificio3,
-//         service: 'Gerencia y Administración de proyectos',
-
-//     },
-//     {
-//         title: 'Obra civil',
-//         image: edificio4,
-//         service: 'Desarrollo de Ingenierías',
-
-//     },
-//     {
-//         title: 'Desarrollo urbano',
-//         image: edificio5,
-//         service: 'Diseño arquitectónico',
-
-//     },
-//     {
-//         title: 'Torre de departamentos',
-//         image: edificio6,
-//         service: 'Gestion de proyectos con metodologia PMI',
-
-//     },
-
-// ]
 
 </script>
 
