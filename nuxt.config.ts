@@ -27,18 +27,6 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  // hooks: {
-  //   'pages:extend'(pages) {
-  //     // add a route
-  //     pages.push(
-  //       {
-  //         name: 'proyecto',
-  //         path: '/proyectos/:slug',
-  //         file: '~/pages/proyectos/[...slug].vue',
-  //       }
-  //     )
-  //   }
-  // },
 
   build: {
     transpile: ['vuetify'],
