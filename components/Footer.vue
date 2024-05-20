@@ -35,9 +35,8 @@
 
                 <ul>
                     <li><a href="#" target="_blank">Linkdln</a></li>
-                    <li><a href="#" target="_blank">GitHub</a></li>
-                    <li><a href="#" target="_blank">Twitter</a></li>
-                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/share/mVrZuFkdR591uQzo/?mibextid=YMEMSu" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/isc.mexico" target="_blank">Instagram</a></li>
                     <li><a href="mailto:#">Email</a></li>
                 </ul>
             </div>
