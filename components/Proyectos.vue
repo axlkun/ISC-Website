@@ -15,7 +15,21 @@
 
             </v-sheet>
 
-            <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5" color="transparent">
+
+            <v-sheet class="skeleton d-flex flex-column-reverse flex-md-column" v-if="loading" color="#f5f1f1">
+                <template v-for="rowIndex in 2">
+                    <v-row :class="rowIndex === 1 ? 'pt-md-6' : ''" class="pb-md-6">
+                        <template v-for="colIndex in 2">
+                            <v-col cols="12" md="6">
+                                <v-skeleton-loader :height="rowIndex == 1 ? 510 : 350" type="image, article, chip"
+                                    color="#f5f1f1"></v-skeleton-loader>
+                            </v-col>
+                        </template>
+                    </v-row>
+                </template>
+            </v-sheet>
+
+            <v-sheet v-else class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5" color="transparent">
                 <v-card v-for="project in projects" :href="'/proyecto/' + project.slug">
                     <v-img :src="`${dominio}${project.imageUrl}`" class="align-end"
                         gradient="to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)" width="400px" height="400px" cover>
@@ -36,10 +50,11 @@ import api from '../api';
 
 const dominio = api.defaults.baseURL;
 const projects = ref([]);
+const loading = ref(true);
 
 const getProjects = async () => {
     try {
-        const response = await api.get('/api/projects');
+        const response = await api.get('/api/projects?limit=6');
 
         if (response.status === 200) {
             projects.value = response.data.data;
@@ -51,7 +66,7 @@ const getProjects = async () => {
         console.error('Error al hacer la solicitud GET:', error);
         $router.push('/');
     } finally {
-        //loading.value = false;
+        loading.value = false;
     }
 }
 
