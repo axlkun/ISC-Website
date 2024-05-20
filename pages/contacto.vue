@@ -3,7 +3,7 @@
     <v-sheet class="heading">
         <p>Contacto</p>
         <h1>¿Tienes dudas? Contactános.</h1>
-        <p>En ISC estamos comprometidos en desarrollar proyectos de la mas alta calidad para nuestros clientes. Tenemos un horario de atención de: <strong> a Viernes de 8:00 AM a 6:00 PM </strong> y <strong>Sábado de 8:00 AM a 1:00 PM</strong></p>
+        <p>En ISC estamos comprometidos en desarrollar proyectos de la mas alta calidad para nuestros clientes. Tenemos un horario de atención de: <strong> Lunes a Viernes de 8:00 AM a 6:00 PM </strong> y <strong>Sábado de 8:00 AM a 1:00 PM</strong></p>
     </v-sheet>
 
     <myParallax/>
