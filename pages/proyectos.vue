@@ -6,12 +6,25 @@
             <p>En ISC estamos comprometidos en desarrollar proyectos de la mas alta calidad para nuestros clientes. Nos enorgullecemos de desarrollar proyectos, donde la innovación, la eficiencia y la sostenibilidad son pilares fundamentales en cada etapa del proceso.</p>
         </v-sheet>
 
-        <v-sheet class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5 project-container" color="transparent">
-            <v-card v-for="project in projects" link>
-                <v-img :src="project.image" class="align-end"
+        <v-sheet class="skeleton d-flex flex-column-reverse flex-md-column " v-if="loading" color="#f5f1f1">
+            <template v-for="rowIndex in 1">
+                <v-row :class="rowIndex === 1 ? 'pt-md-6' : ''" class="pb-md-6">
+                    <template v-for="colIndex in 3">
+                        <v-col cols="12" md="4">
+                            <v-skeleton-loader :height="rowIndex == 1 ? 510 : 350" type="image, article, chip"
+                                color="#f5f1f1"></v-skeleton-loader>
+                        </v-col>
+                    </template>
+                </v-row>
+            </template>
+        </v-sheet>
+
+        <v-sheet v-else class="d-flex flex-wrap justify-center justify-lg-space-between ga-8 pb-5 project-container" color="transparent">
+            <v-card v-for="project in projects" :href="'/proyecto/' + project.slug">
+                <v-img :src="`${dominio}${project.imageUrl}`" class="align-end"
                     gradient="to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)" width="400px" height="400px" cover>
                     <v-card-title class="text-white">{{ project.title }}</v-card-title>
-                    <v-card-subtitle class="text-white mb-4">{{ project.services }}</v-card-subtitle>
+                    <v-card-subtitle class="text-white mb-4">{{ project.service }}</v-card-subtitle>
                 </v-img>
 
             </v-card>
@@ -23,55 +36,38 @@
 </template>
 
 <script setup>
-import edificio1 from 'assets/edificio-3.webp';
-import edificio2 from 'assets/edificio-7.webp';
-import edificio3 from 'assets/edificio-1.webp';
-import edificio4 from 'assets/edificio-2.webp';
-import edificio5 from 'assets/edificio-5.webp';
-import edificio6 from 'assets/edificio-9.webp';
 
 import myParallax from '../components/Parallax.vue';
-  import myContact from '../components/Contact.vue';
+import myContact from '../components/Contact.vue';
 
-  const projects = [
-    {
-        title: 'Edificio Corporativo',
-        image: edificio1,
-        service: 'Obra Civil.',
+import api from '../api';
 
-    },
-    {
-        title: 'Complejo Habitacional',
-        image: edificio2,
-        service: 'Ejecución y Supervisión de obra',
+const dominio = api.defaults.baseURL;
+const projects = ref([]);
+const loading = ref(true);
 
-    },
-    {
-        title: 'Obra residencial',
-        image: edificio3,
-        service: 'Gerencia y Administración de proyectos',
+const getProjects = async () => {
+    try {
+        const response = await api.get('/api/projects');
 
-    },
-    {
-        title: 'Obra civil',
-        image: edificio4,
-        service: 'Desarrollo de Ingenierías',
+        if (response.status === 200) {
+            projects.value = response.data.data;
+        } else {
+            console.error('Respuesta no exitosa:', response);
+            $router.push('/');
+        }
+    } catch (error) {
+        console.error('Error al hacer la solicitud GET:', error);
+        $router.push('/');
+    } finally {
+        loading.value = false;
+    }
+}
 
-    },
-    {
-        title: 'Desarrollo urbano',
-        image: edificio5,
-        service: 'Diseño arquitectónico',
+onMounted(() => {
+    getProjects();
+})
 
-    },
-    {
-        title: 'Torre de departamentos',
-        image: edificio6,
-        service: 'Gestion de proyectos con metodologia PMI',
-
-    },
-
-]
 </script>
 
 <style scoped>
