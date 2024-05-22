@@ -39,7 +39,7 @@ export default defineNuxtConfig({
 
       meta: [
         { 'http-equiv': 'content-language', content: 'es' },
-        // ...otras etiquetas meta
+        { name: 'description', content: 'En ISC: Ingeniería Servicios & Construcción desarrollamos los proyectos de mayor complejidad técnica, mejorando la calidad de vida de las personas y potenciando el desarrollo económico.' }, 
       ],
 
       link: [
