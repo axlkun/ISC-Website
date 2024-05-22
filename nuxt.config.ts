@@ -1,7 +1,27 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import axios from 'axios'
+// create a function to fetch the routes from the API
+const getProjectRoutes = async () => {
+  const response = await axios.get(
+    'https://admin.isc-mexico.com/api/projects'
+  );
+
+  // return the array of routes
+  return response?.data?.data.map((post) => `/proyecto/${post.slug}`);
+};
 
 export default defineNuxtConfig({
-  
+  ssr: true,
+
+  hooks: {
+    async 'nitro:config'(nitroConfig) {
+      // fetch the routes from our function above
+      const slugs = await getProjectRoutes();
+      // add the routes to the nitro config
+      nitroConfig.prerender.routes.push(...slugs);
+    },
+  },
+
   app: {
     
     head: {
@@ -48,9 +68,9 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    prerender: {
-      routes: ['/proyecto/bridge-river']
-    }
-  }
+  // nitro: {
+  //   prerender: {
+  //     routes: ['/proyecto/bridge-river']
+  //   }
+  // }
 })
