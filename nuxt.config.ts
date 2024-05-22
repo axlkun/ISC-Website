@@ -47,4 +47,10 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  nitro: {
+    prerender: {
+      routes: ['/proyecto/bridge-river']
+    }
+  }
 })
