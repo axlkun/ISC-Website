@@ -22,6 +22,12 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    prerender: {
+      fallback: '404.html',  // Página de fallback
+    },
+  },
+
   app: {
     
     head: {
