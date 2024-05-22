@@ -37,7 +37,7 @@
                     <li><a href="#" target="_blank">Linkdln</a></li>
                     <li><a href="https://www.facebook.com/share/mVrZuFkdR591uQzo/?mibextid=YMEMSu" target="_blank">Facebook</a></li>
                     <li><a href="https://www.instagram.com/isc.mexico" target="_blank">Instagram</a></li>
-                    <li><a href="mailto:#">Email</a></li>
+                    <li><a href="mailto:contacto@isc-mexico.com">Email</a></li>
                 </ul>
             </div>
 

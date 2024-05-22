@@ -11,7 +11,7 @@
                 </h2>
     
                 <div class="button-container">
-                    <a class="button" href="mailto:#">Contacto</a>
+                    <a class="button" href="mailto:contacto@isc-mexico.com">Contacto</a>
                 </div>
             </div>
             

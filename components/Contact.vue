@@ -61,7 +61,7 @@
 
                     <v-sheet class="direct-contact">
 
-                        <a class="button" href="#" target="_blank">
+                        <a class="button" href="mailto:contacto@isc-mexico.com">
                             <div class="social-name">
                                 <span class="mdi mdi-email"></span>
                                 <span>Email</span>
